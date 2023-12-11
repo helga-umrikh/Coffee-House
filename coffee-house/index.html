@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="512x512" href="../coffee-house/assets/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../coffee-house/assets/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../coffee-house/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../coffee-house/assets/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+  <title>Coffee House</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <header class="header">
+        <div class="header__container">
+          <div class="header_logo">
+            <a href="index.html"><img src="./assets/logo.svg" alt="logo"></a>
+          </div>
+          <div>
+            <nav>
+              <ul class="header__navigation">
+                <li class="nav_item"><a class="font_item nav_item_link" href="#">Favorite coffee</a></li>
+                <li class="nav_item"><a class="font_item nav_item_link" href="#">About</a></li>
+                <li class="nav_item"><a class="font_item nav_item_link" href="#">Mobile app</a></li>
+                <li class="nav_item"><a class="font_item nav_item_link" href="#">Contact us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__menu-container">
+            <a class="header__menu-btn" href="menuPage.html">
+              <p class="font_item menu-btn">Menu</p>
+              <img src="./assets/coffee-cup.svg" alt="coffee cup icon" />
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__enjoy-section">
+          <div class="enjoy-section__container">
+            <div class="enjoy-section__content">
+              <h1 class="enjoy-section__title">
+                <i class="_italic">Enjoy</i> premium coffee at our charming cafe
+              </h1>
+              <p class="enjoy-section_subtitle subtitle">
+                With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular
+                destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite
+                beverage.
+              </p>
+              <button class="button-primary">
+                <p class="subtitle">Menu</p>
+                <img class="button-primary-icon" src="./assets/coffee-cup.svg" alt="coffee cup icon">
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="main_favorite-section">
+          <div class="favorite-section__container">
+            <p class="favorite-section__title title">
+              Choose your <i class="_italic">favorite</i> coffee
+            </p>
+            <div class="favorite-section__slider">
+              <div class="">
+                <button class="button-left slider-button">
+                  <img src="./assets/arrow-left.svg" alt="arrow left icon">
+                </button>
+              </div>
+              <div class="slider__content">
+                <div class="slider__img">
+                  <img src="../coffee-house/assets/slider-img/coffee-slider-1.png" alt="slider image">
+                </div>
+                <div class="slider__info">
+                  <p class="slider__subtitle">S’mores Frappuccino
+                  <p>
+                  <p class="slider__description subtitle">
+                    This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with
+                    oat milk.
+                  </p>
+                  <p class="slider__subtitle">$5.50</p>
+                </div>
+                <div class="slider__dashes">
+                  <button class="dash__button"></button>
+                  <button class="dash__button"></button>
+                  <button class="dash__button"></button>
+                </div>
+              </div>
+              <div class=""> <button class="button-left slider-button">
+                  <img src="./assets/arrow-right.svg" alt="arrow right icon">
+                </button></div>
+            </div>
+          </div>
+        </section>
+        <section class="main_about-section">
+          <div class="about-section__container">
+            <p class="about-section__title title">
+              Resource is <i class="_italic">the perfect and cozy place</i> where you can enjoy a variety
+              of hot beverages, relax, catch up with friends, or get some work done.
+            </p>
+            <div class="about-section__dashboard">
+              <div class="dashboard__item"><img class="dashboard__image" src="./assets/dashboard/about-1.png"
+                  alt="about cafe image"></div>
+              <div class="dashboard__item">
+                <img class="dashboard__image" src="./assets/dashboard/about-2.png" alt="about cafe image">
+              </div>
+              <div class="dashboard__item _item "><img class="dashboard__image  _image" src="./assets/dashboard/about-3.png"
+                  alt="about cafe image"></div>
+              <div class="dashboard__item"><img class="dashboard__image" src="./assets/dashboard/about-4.png"
+                  alt="about cafe image"></div>
+
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
