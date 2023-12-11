@@ -523,6 +523,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2.5em;
 }
 
 .amazing-section__title {
