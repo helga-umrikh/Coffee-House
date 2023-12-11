@@ -439,9 +439,77 @@ body {
 }
 
 .app-stores__button:hover .app-stores__title {
-  color: #e1d4c9;
+    color: #e1d4c9;
 }
 
 .app-stores__description {
     width: 112px;
+}
+
+/*-------------------------FOOTER-----------------------*/
+
+.footer {
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 40px;
+    background: #665f55;
+    padding: 6.25em;
+    margin-bottom: 2.5em;
+}
+
+.footer__description {
+    width: 45%;
+}
+
+.footer__title {
+    color: #e1d4c9;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    margin-bottom: 0.66em;
+}
+
+.footer__contacts {
+    padding-right: 16.8em;
+}
+
+.contacts__title {
+    margin-bottom: 1.7em;
+
+    color: #e1d4c9;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.contacts__item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.contacts__text {
+    font-weight: 600;
+    color: #e1d4c9;
+}
+
+.contacts__icon {
+    margin-right: 0.5em;
+}
+
+.social-button-icon {
+  padding: 15px;
+  margin-right: 0.9em;
+    border-radius: 100px;
+    border: 1px solid #c1b6ad;
+    background-color: transparent;
 }
