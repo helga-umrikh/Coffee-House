@@ -568,6 +568,64 @@ body {
     background: #665f55;
 }
 
-.amazing-section__button:hover, .amazing-section__button-title:hover {
-    color: #E1D4C9;
+.amazing-section__button:hover,
+.amazing-section__button-title:hover {
+    color: #e1d4c9;
+}
+
+/*-------------------MENU-CARDS---------------------------*/
+
+.main__menu-cards-section {
+}
+
+.menu-cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    margin-bottom: 6.25em;
+    
+}
+
+.menu-cards__item {
+    border-radius: 40px;
+    border: 1px solid #c1b6ad;
+    max-width: 310px;
+}
+
+.menu-cards__item:hover {
+    transform: scale(0.9);
+}
+
+.menu-cards__header {
+    border-radius: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu-cards__image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.menu-cards__description {
+    padding:  1.25em 1.25em 0 1.25em;
+    max-width: 270px;
+}
+
+.menu-cards__title {
+    margin-bottom: 0.5em;
+    color: #403f3d;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; 
+}
+
+.menu-cards__subtitle {
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    height: 4.5em;
 }
