@@ -326,7 +326,7 @@ body {
 
 /*--------------------------ABOUT----------------------------------*/
 
-.main_about-section {
+.main__about-section {
 }
 
 .about-section__container {
@@ -340,33 +340,108 @@ body {
 }
 
 .about-section__dashboard {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 1100px;
 }
 
 .dashboard__item {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 ._item {
-  width: 660px;
-  height: 430px;
-  overflow: hidden;
+    width: 660px;
+    height: 430px;
+    overflow: hidden;
 }
 
 ._image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .dashboard__image {
-  border-radius: 20px;
-  transition: transform 0.3s ease;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
 }
 
 .dashboard__image:hover {
-  transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+/*----------------------MOBILE-APP------------------------*/
+
+.main__mobile-app-section {
+}
+
+.mobile-app-section__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6.25em;
+}
+
+.mobile-app-section__subtitle {
+    margin-bottom: 2.5em;
+}
+
+.mobile-app-section__description {
+    margin-top: 8em;
+    width: 45%;
+}
+
+.mobile-app-section__title {
+    margin-bottom: 0.68em;
+}
+
+.app-stores__button {
+    margin-right: 1.5em;
+    background-color: transparent;
+    padding: 12px 20px;
+    border-radius: 100px;
+    border: 1px solid #665f55;
+}
+
+.app-stores__button:hover {
+    background-color: #665f55;
+}
+
+.app-stores__button-container {
+    display: flex;
+}
+
+.app-stores__icon {
+    margin-right: 0.8em;
+}
+
+.app-stores__title {
+    color: #403f3d;
+    text-align: start;
+    font-weight: 600;
+}
+
+.app-stores__subtitle {
+    color: #403f3d;
+    text-align: start;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.app-stores__button:hover .app-stores__subtitle {
+    color: #e1d4c9;
+}
+
+.app-stores__button:hover .app-stores__title {
+  color: #e1d4c9;
+}
+
+.app-stores__description {
+    width: 112px;
 }
