@@ -507,9 +507,66 @@ body {
 }
 
 .social-button-icon {
-  padding: 15px;
-  margin-right: 0.9em;
+    padding: 15px;
+    margin-right: 0.9em;
     border-radius: 100px;
     border: 1px solid #c1b6ad;
     background-color: transparent;
+}
+
+/*-------------------------MENU--PAGE---------------------*/
+
+.main__amazing-section {
+}
+
+.amazing-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.amazing-section__title {
+    text-align: center;
+    max-width: 800px;
+    font-weight: 600;
+    margin-bottom: 0.67em;
+}
+
+/*button*/
+.amazing-section__buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 361px;
+}
+
+.amazing-section__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0.5em;
+    border: 1px solid #c1b6ad;
+    border-radius: 100px;
+    background: transparent;
+}
+
+.amazing-section__button-icon-container {
+    padding: 0.53em;
+    border-radius: 100px;
+    background: #c1b6ad;
+}
+
+.amazing-section__button-title {
+    font-weight: 600;
+    color: #403f3d;
+    padding: 0.5em;
+}
+
+.amazing-section__button:hover {
+    border: 1px solid #665f55;
+    background: #665f55;
+}
+
+.amazing-section__button:hover, .amazing-section__button-title:hover {
+    color: #E1D4C9;
 }

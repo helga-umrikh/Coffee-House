@@ -27,21 +27,95 @@
           <div>
             <nav>
               <ul class="header__navigation">
-                <li><a class="_item" href="#">Favorite coffee</a></li>
-                <li><a class="_item" href="#">About</a></li>
-                <li><a class="_item" href="#">Mobile app</a></li>
-                <li><a class="_item" href="#">Contact us</a></li>
+                <li class="nav_item"><a class="font_item nav_item_link" href="#">Favorite coffee</a></li>
+                <li class="nav_item"><a class="font_item nav_item_link" href="#">About</a></li>
+                <li class="nav_item"><a class="font_item nav_item_link" href="#">Mobile app</a></li>
+                <li class="nav_item"><a class="font_item nav_item_link" href="#">Contact us</a></li>
               </ul>
             </nav>
           </div>
-          <div class="header__menu-btn">
+          <div class="header__menu-container">
             <a class="header__menu-btn" href="menuPage.html">
-              <p class="_item menu-btn">Menu</p>
+              <p class="font_item menu-btn">Menu</p>
               <img src="./assets/coffee-cup.svg" alt="coffee cup icon" />
             </a>
           </div>
         </div>
       </header>
+      <main class="main">
+        <section class="main__amazing-section">
+          <div class="amazing-section__container">
+            <p class="amazing-section__title title">
+              Behind each of our cups hides an <i class="_italic">amazing surprise</i>
+            </p>
+            <div class="amazing-section__buttons-container">
+              <button class="amazing-section__button">
+                <div class="amazing-section__button-icon-container">
+                  <img src="./assets/menu/coffe-cup.svg" alt="coffee cup icon">
+                </div>
+                <p class="amazing-section__button-title subtitle">Coffee</p>
+              </button>
+
+              <button class="amazing-section__button">
+                <div class="amazing-section__button-icon-container">
+                  <img src="./assets/menu/tea.svg" alt="tea pot icon">
+                </div>
+                <p class="amazing-section__button-title subtitle">Tea</p>
+              </button>
+              <button class="amazing-section__button">
+                <div class="amazing-section__button-icon-container">
+                  <img src="./assets/menu/desert.svg" alt="desert pot icon">
+                </div>
+                <p class="amazing-section__button-title subtitle">Desert</p>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__description">
+            <div class="footer__title">Sip, Savor, Smile. <i class="_italic">It’s coffee time!</i></div>
+            <div class="footer__social-icons">
+              <button class="social-button-icon">
+                <div>
+                  <img src="./assets/contacts/twitter.svg" alt="twitter icon">
+                </div>
+              </button>
+              <button class="social-button-icon">
+                <div>
+                  <img src="./assets/contacts/instagram.svg" alt="instagram icon">
+                </div>
+              </button>
+              <button class="social-button-icon">
+                <div>
+                  <img src="./assets/contacts/facebook.svg" alt="facebook icon">
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="footer__contacts">
+            <p class="contacts__title">Contact us</p>
+
+            <div>
+              <div class="contacts__item">
+                <img class="contacts__icon" src="./assets/contacts/pin-alt.svg" alt="map pin icon">
+                <p class="contacts__text subtitle">8558 Green Rd., LA</p>
+              </div>
+              <div class="contacts__item">
+                <img class="contacts__icon" src="./assets/contacts/phone.svg" alt="phone icon">
+                <p class="contacts__text subtitle">+1 (603) 555-0123</p>
+              </div>
+              <div class="contacts__item">
+                <img class="contacts__icon" src="./assets/contacts/clock.svg" alt="clock icon">
+                <p class="contacts__text subtitle">Mon-Sat: 9:00 AM – 23:00 PM</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </div>
 </body>
