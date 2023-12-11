@@ -40,6 +40,10 @@ body {
     background-color: #e1d4c9;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -164,6 +168,7 @@ body {
 .nav_item {
     position: relative;
 }
+
 
 .nav_item_link::before {
     content: '';
