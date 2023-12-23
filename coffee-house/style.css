@@ -9,6 +9,7 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul,
@@ -75,12 +76,15 @@ html {
 }
 
 .button-primary {
-    background-color: #e1d4c9;
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 64px;
     padding: 20px 78px;
+    background-color: #e1d4c9;
+    color: #403F3D;
     border-radius: 100px;
     font-weight: 600;
-    position: relative;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
 }
@@ -90,21 +94,6 @@ html {
     border: 1px solid #665f55;
 }
 
-.button-primary-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.button-primary-icon:hover {
-    padding-left: 30px;
-}
-
-.button-primary:hover .button-primary-icon {
-    opacity: 1;
-}
 
 .slider-button {
     border-radius: 100px;
@@ -168,7 +157,6 @@ html {
 .nav_item {
     position: relative;
 }
-
 
 .nav_item_link::before {
     content: '';
@@ -270,6 +258,30 @@ html {
     color: #e1d4c9;
     margin-bottom: 40px;
     font-weight: 400;
+}
+
+
+.enjoy-section__btn-to-menu .btn-to-menu__text {
+    position: absolute;
+    transition: 0.5s;
+}
+
+.enjoy-section__btn-to-menu:hover .btn-to-menu__text {
+    transform: translateX(-15px);
+}
+
+.enjoy-section__btn-to-menu .btn-to-menu__icon {
+    position: absolute;
+    top: 20px;
+	left: 112px;
+	width: 20px;
+	height: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.enjoy-section__btn-to-menu:hover .btn-to-menu__icon {
+    opacity: 1;
 }
 
 /*--------------------------FAVORITE----------------------------------*/
@@ -588,7 +600,6 @@ html {
     flex-wrap: wrap;
     gap: 2.5em;
     margin-bottom: 6.25em;
-    
 }
 
 .menu-cards__item {
@@ -614,7 +625,7 @@ html {
 }
 
 .menu-cards__description {
-    padding:  1.25em 1.25em 0 1.25em;
+    padding: 1.25em 1.25em 0 1.25em;
     max-width: 270px;
 }
 
@@ -626,7 +637,7 @@ html {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 125%; 
+    line-height: 125%;
 }
 
 .menu-cards__subtitle {
