@@ -418,7 +418,12 @@ html {
     margin-bottom: 0.68em;
 }
 
+.mobile-app-section__app-stores {
+    display: flex;
+}
+
 .app-stores__button {
+    width:  12.5em;
     margin-right: 1.5em;
     background-color: transparent;
     padding: 12px 20px;
