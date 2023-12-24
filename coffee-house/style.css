@@ -527,12 +527,28 @@ html {
     margin-right: 0.5em;
 }
 
+.footer__social-icons {
+    display: flex;
+}
+
 .social-button-icon {
+    width: 3.75em;
+    height: 3.75em;
+    text-align: center;
     padding: 15px;
     margin-right: 0.9em;
     border-radius: 100px;
     border: 1px solid #c1b6ad;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.social-button-icon:hover {
+    background-color: #E1D4C9;
+}
+
+.social-button-icon:hover path {
+    stroke: #665F55;
 }
 
 /*-------------------------MENU--PAGE---------------------*/
