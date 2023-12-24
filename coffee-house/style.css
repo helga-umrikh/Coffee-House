@@ -566,21 +566,48 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 0.5em;
+    padding: 3px 0.5em;
     border: 1px solid #c1b6ad;
     border-radius: 100px;
     background: transparent;
+    transition: ease-out 0.7s;
+    cursor: pointer;
+}
+
+.amazing-section__active-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 0.5em;
+    border: 1px solid #665f55;
+    border-radius: 100px;
+    background: #665f55;
+    transition: ease-out 0.7s;
+    color: #c1b6ad;
 }
 
 .amazing-section__button-icon-container {
-    padding: 0.53em;
+    padding: 0.48em;
     border-radius: 100px;
     background: #c1b6ad;
 }
 
+.amazing-section__button p {
+    color: #403f3d;
+}
+
+.amazing-section__button:hover > p:hover {
+    color: #c1b6ad;
+}
+
+.amazing-section__button p:hover {
+    color: #403f3d;
+}
+
+
+
 .amazing-section__button-title {
     font-weight: 600;
-    color: #403f3d;
     padding: 0.5em;
 }
 
@@ -589,8 +616,7 @@ html {
     background: #665f55;
 }
 
-.amazing-section__button:hover,
-.amazing-section__button-title:hover {
+.amazing-section__button.amazing-section__button-title:hover {
     color: #e1d4c9;
 }
 
