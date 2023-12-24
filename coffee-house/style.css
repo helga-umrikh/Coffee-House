@@ -628,6 +628,7 @@ html {
 .menu-cards__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2.5em;
     margin-bottom: 6.25em;
 }
@@ -636,6 +637,7 @@ html {
     border-radius: 40px;
     border: 1px solid #c1b6ad;
     max-width: 310px;
+    cursor: pointer;
 }
 
 .menu-cards__item:hover {
