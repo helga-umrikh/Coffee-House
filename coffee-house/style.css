@@ -803,4 +803,22 @@ html {
     .enjoy-section__content {
         width: 100%;
     }
+
+    .media_display {
+        display: none;
+    }
+
+    .about-section__dashboard {
+        height: auto;
+    }
+
+    .mobile-app-section__container {
+        flex-direction: column;
+    }
+
+    .mobile-app-section__description {
+        margin: 0 0 6.25em 0;
+        width: 100%;
+    }
+
 }
