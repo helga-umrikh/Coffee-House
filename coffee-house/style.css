@@ -812,6 +812,14 @@ html {
     .enjoy-section__content {
         width: 100%;
     }
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .footer__description {
+        width: 100%;
+    }
 }
 
 
@@ -831,12 +839,10 @@ html {
     }
 
     .footer__container {
-        flex-direction: column;
         padding: 6.25em 3.75em;
     }
 
     .footer__description {
-        width: 100%;
         margin-bottom: 6.25em;
     }
 
@@ -924,5 +930,23 @@ html {
 
     .mobile-app-section__image img {
         width: 100%;
+    }
+
+    .footer__container {
+        padding: 1em;
+    }
+
+    .footer__title {
+        margin: 1.375em 0 1.25em 0;
+        font-size: 32px;
+    }
+
+    .footer__contacts {
+        padding: 0;
+        margin: 0 0 2em 0;
+    }
+
+    .footer__social-icons {
+        margin: 0 0 2.5em 0;
     }
 }
