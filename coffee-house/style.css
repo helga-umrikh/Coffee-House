@@ -821,4 +821,14 @@ html {
         width: 100%;
     }
 
+    .footer__container {
+        flex-direction: column;
+        padding: 6.25em 3.75em;
+    }
+
+    .footer__description {
+        width: 100%;
+        margin-bottom: 6.25em;
+    }
+
 }
