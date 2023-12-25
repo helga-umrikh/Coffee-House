@@ -105,7 +105,6 @@ html {
     background-color: #665f55;
 }
 
-/*----arrow-icon--*/
 .arrow {
     width: 24px;
     height: 24px;
@@ -116,7 +115,6 @@ html {
     stroke-width: 2px;
 }
 
-/* Example hover styling */
 .arrow:hover #Vector {
     stroke: #e1d4c9;
 }
@@ -832,6 +830,60 @@ html {
         padding: 1em 1.07em 0.8em 1.07em;
         border: 1px solid #403f3d;
         border-radius: 100px;
+    }
+
+    /*------disable--hover-------------*/
+
+    .slider-button:hover {
+        background-color: inherit;
+    }
+
+    .arrow:hover #Vector {
+        stroke: inherit;
+    }
+
+    .dash__button:hover {
+        background-color: inherit;
+    }
+
+    .nav_item_link:hover::before {
+        width: inherit;
+    }
+
+    .active_btn:hover::before {
+        width: inherit;
+    }
+    
+    .app-stores__button:hover {
+        background-color: inherit;
+    }
+
+    .app-stores__button:hover .app-stores__subtitle {
+        color: inherit;
+    }
+    
+    .app-stores__button:hover .app-stores__title {
+        color: inherit;
+    }
+
+    .social-button-icon:hover {
+        background-color: inherit;
+    }
+    
+    .social-button-icon:hover path {
+        stroke: inherit;
+    }
+
+    .amazing-section__button:hover > p:hover {
+        color:inherit;
+    }
+    
+    .amazing-section__button p:hover {
+        color: inherit;
+    }
+
+    .menu-cards__item:hover {
+        transform: none
     }
 }
 
