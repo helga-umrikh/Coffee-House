@@ -710,12 +710,7 @@ html {
 
 /*-------------------MEDIA-----------------------------------------------*/
 
-
-@media screen and (max-width: 768px) and (min-width: 381px) {
-
-    .container {
-        max-width: 688px;
-    }
+@media screen and (max-width: 768px) {
 
     .header__navigation-container {
         display: none;
@@ -767,7 +762,6 @@ html {
         left: 0;
     }
 
-
     .header__navigation{
         display: flex;
         flex-direction: column;
@@ -799,14 +793,6 @@ html {
         margin: 0 auto;
     }
 
-    .enjoy-section__container {
-        padding: 6.25em 6.25em 6.25em 3.75em;
-    }
-
-    .enjoy-section__content {
-        width: 100%;
-    }
-
     .media_display {
         display: none;
     }
@@ -820,8 +806,28 @@ html {
     }
 
     .mobile-app-section__description {
-        margin: 0 0 6.25em 0;
         width: 100%;
+    }
+
+    .enjoy-section__content {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 381px) {
+
+    .container {
+        max-width: 688px;
+    }
+
+    .enjoy-section__container {
+        padding: 6.25em 6.25em 6.25em 3.75em;
+    }
+
+
+    .mobile-app-section__description {
+        margin: 0 0 6.25em 0;
     }
 
     .footer__container {
@@ -847,4 +853,76 @@ html {
         border-radius: 100px;
     }
 
+}
+
+@media screen and (max-width: 380px) {
+    .container {
+        max-width: 348px;
+    }
+
+    .header__navigation {
+        width: 100%;
+    }
+
+    .enjoy-section__container {
+        padding: 3.75em 1em;
+    }
+
+    .enjoy-section__title {
+        font-size: 42px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .slider-button {
+        display: none;
+    }
+
+    .slider__img img {
+        width: 100%;
+    }
+
+    .slider__info {
+        width: 100%;
+    }
+
+    .inactive_img {
+        display: none;
+    }
+
+    .about-section__dashboard div {
+        height: 590px;
+        width: 348px;
+        background-position: center;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .about-section__dashboard div:first-child {
+        background-image: url(./assets/dashboard/about-1.png);
+    }
+
+    .about-section__dashboard div:last-child {
+        background-image: url(./assets/dashboard/about-4.png) ;
+    }
+
+    .mobile-app-section__description {
+        margin-top: 0;
+    }
+
+    .mobile-app-section__app-stores {
+        flex-direction: column;
+        margin-bottom: 2.5em;
+
+    }
+
+    .mobile-app-section__app-stores .app-stores__button:first-child {
+        margin-bottom: 1.25em;
+    }
+
+    .mobile-app-section__image img {
+        width: 100%;
+    }
 }
