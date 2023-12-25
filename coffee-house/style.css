@@ -820,6 +820,19 @@ html {
     .footer__description {
         width: 100%;
     }
+
+    .main__menu-cards-section {
+        margin-bottom: 6.25em;
+    }
+
+    .menu-cards__refresh-btn {
+        width: fit-content;
+        display: block;
+        margin: 0 auto;
+        padding: 1em 1.07em 0.8em 1.07em;
+        border: 1px solid #403f3d;
+        border-radius: 100px;
+    }
 }
 
 
@@ -844,19 +857,6 @@ html {
 
     .footer__description {
         margin-bottom: 6.25em;
-    }
-
-    .main__menu-cards-section {
-        margin-bottom: 6.25em;
-    }
-
-    .menu-cards__refresh-btn {
-        width: fit-content;
-        display: block;
-        margin: 0 auto;
-        padding: 1em 1.07em 0.8em 1.07em;
-        border: 1px solid #403f3d;
-        border-radius: 100px;
     }
 
 }
