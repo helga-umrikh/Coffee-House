@@ -191,6 +191,11 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0 0 5px 0;
+}
+
+.header__menu-btn img {
+    padding: 0 0 3px 0;
 }
 
 .menu-btn {
@@ -236,6 +241,7 @@ html {
 
 .main__enjoy-section {
     background-image: url('./assets/img-hero.png');
+    background-position: center;
     background-size: cover;
     position: relative;
     border-radius: 40px;
@@ -260,8 +266,7 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: 105%;
-
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 }
 
 .enjoy-section_subtitle {
