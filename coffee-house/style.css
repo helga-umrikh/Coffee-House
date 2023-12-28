@@ -191,7 +191,8 @@ html {
 .header__menu-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    padding: 16px 0 0 0;
 }
 
 .header__menu-btn {
@@ -199,7 +200,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 0 5px 0;
+    padding: 0 0 2px 0;
 }
 
 .header__menu-btn img {
@@ -212,6 +213,7 @@ html {
 
 ._inactive {
     cursor: default;
+    border-bottom: 2px solid #403f3d;
 }
 
 .active_btn::before {
@@ -583,7 +585,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2.5em;
+    margin-bottom: 2.35em;
 }
 
 .amazing-section__title {
@@ -617,7 +619,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 3px 0.5em;
+    padding: 3px 0.4em;
     border: 1px solid #665f55;
     border-radius: 100px;
     background: #665f55;
@@ -694,8 +696,9 @@ html {
 }
 
 .menu-cards__description {
-    padding: 1.25em 1.25em 0 1.25em;
     max-width: 270px;
+    padding: 1.4em 1.25em 0 1.15em;
+    margin-bottom: 18px;
 }
 
 .menu-cards__title {
@@ -710,7 +713,7 @@ html {
 }
 
 .menu-cards__subtitle {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
     font-weight: 400;
     height: 4.5em;
 }
