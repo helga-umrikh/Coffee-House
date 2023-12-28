@@ -1048,6 +1048,14 @@ html {
         width: 100%;
     }
 
+    .amazing-section__title {
+        margin-bottom: 41px;
+    }
+
+    .menu-cards__container {
+        margin-bottom: 2.5em;
+    }
+
     .footer__container {
         padding: 1em;
     }
