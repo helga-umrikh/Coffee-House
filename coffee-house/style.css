@@ -724,7 +724,7 @@ html {
 
 /*-------------------MEDIA-----------------------------------------------*/
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 768px) {
 
     .header__navigation-container {
         display: none;
@@ -913,7 +913,7 @@ html {
 }
 
 
-@media screen and (max-width: 1400px) and (min-width: 707px) {
+@media screen and (max-width: 768px) and (min-width: 707px) {
 
     .container {
         max-width: 688px;
