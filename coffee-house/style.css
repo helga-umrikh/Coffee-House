@@ -139,6 +139,10 @@ html {
     background-color: #665f55;
 }
 
+.active_dash {
+    background-color: #423d37;
+}
+
 /* --------------------------HEADER------------------------ */
 
 .header {
