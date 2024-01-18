@@ -46,29 +46,29 @@ const sliderData = [
 
 //slider
 document.addEventListener('DOMContentLoaded', function () {
-    const prevButton = document.querySelector('.prev-slide');
-    const nextButton = document.querySelector('.next-slide');
-    const dashButtons = document.querySelectorAll('.dash__button');
+    const prevButton = document.querySelector('.prev-slide')
+    const nextButton = document.querySelector('.next-slide')
+    const dashButtons = document.querySelectorAll('.dash__button')
 
     let slideIndex = 0
 
     prevButton.addEventListener('click', () => {
-        slideIndex === 0 ? (slideIndex = 2) : slideIndex--;
+        slideIndex === 0 ? (slideIndex = 2) : slideIndex--
         updateSliderContent()
     })
 
     nextButton.addEventListener('click', () => {
-        slideIndex === 2 ? (slideIndex = 0) : slideIndex++;
+        slideIndex === 2 ? (slideIndex = 0) : slideIndex++
         updateSliderContent()
-    });
+    })
 
     dashButtons.forEach((e, index) => {
-      e.addEventListener('click', () => {
-        slideIndex = index;
-        updateSliderContent();
-        e.classList.toggle('active_dash');
-      });
-    });
+        e.addEventListener('click', () => {
+            slideIndex = index
+            updateSliderContent()
+            e.classList.toggle('active_dash')
+        })
+    })
 
     function updateSliderContent() {
         const sliderImg = document.querySelector('.slider_src')
@@ -84,5 +84,25 @@ document.addEventListener('DOMContentLoaded', function () {
         sliderPrice.textContent = currentSlide.price
     }
 
-    updateSliderContent();
+    updateSliderContent()
+})
+
+
+//navigation from MenuPage to sections of home page
+
+const favoriteButton = document.getElementById('favorite');
+const aboutButton = document.getElementById('about');
+const mobileAppButton = document.getElementById('mobile-app');
+
+
+favoriteButton.addEventListener('click', function () {
+    window.location.href = 'index.html#favorite-section'
+})
+
+aboutButton.addEventListener('click', function () {
+    window.location.href = 'index.html#about-section'
+})
+
+mobileAppButton.addEventListener('click', function () {
+    window.location.href = 'index.html#mobile-app-section'
 })
