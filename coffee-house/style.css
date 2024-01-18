@@ -51,8 +51,9 @@ html {
 }
 
 .container {
-    max-width: 1360px;
+    max-width: 1440px;
     margin: 0px auto;
+    padding: 0 40px;
 }
 
 .title {
@@ -270,7 +271,7 @@ html {
 }
 
 .enjoy-section__content {
-    width: 49%;
+    width: 530px;
 }
 
 .enjoy-section__title {
@@ -728,7 +729,17 @@ html {
 
 /*-------------------MEDIA-----------------------------------------------*/
 
+@media screen and (max-width: 1420px) and (min-width: 769px) {
+    .about-section__dashboard {
+        height: auto;
+        align-content: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
 
     .header__navigation-container {
         display: none;
