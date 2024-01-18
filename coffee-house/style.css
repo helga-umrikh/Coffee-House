@@ -586,13 +586,6 @@ html {
 .main__amazing-section {
 }
 
-._coffee {
-    
-}
-
-._tea {
-    
-}
 
 .amazing-section__container {
     display: flex;
@@ -628,17 +621,14 @@ html {
     cursor: pointer;
 }
 
-.amazing-section__active-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 3px 0.4em;
-    border: 1px solid #665f55;
-    border-radius: 100px;
+
+
+._active-menu-btn {
     background: #665f55;
     transition: ease-out 0.7s;
     color: #c1b6ad;
 }
+
 
 .amazing-section__button-icon-container {
     padding: 0.48em;
@@ -675,6 +665,7 @@ html {
 /*-------------------MENU-CARDS---------------------------*/
 
 .main__menu-cards-section {
+    display: block;
 }
 
 .menu-cards__container {
