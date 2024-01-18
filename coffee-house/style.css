@@ -51,8 +51,9 @@ html {
 }
 
 .container {
-    max-width: 1360px;
+    max-width: 1440px;
     margin: 0px auto;
+    padding: 0 40px;
 }
 
 .title {
@@ -270,7 +271,7 @@ html {
 }
 
 .enjoy-section__content {
-    width: 49%;
+    width: 530px;
 }
 
 .enjoy-section__title {
@@ -585,6 +586,7 @@ html {
 .main__amazing-section {
 }
 
+
 .amazing-section__container {
     display: flex;
     flex-direction: column;
@@ -619,17 +621,14 @@ html {
     cursor: pointer;
 }
 
-.amazing-section__active-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 3px 0.4em;
-    border: 1px solid #665f55;
-    border-radius: 100px;
+
+
+._active-menu-btn {
     background: #665f55;
     transition: ease-out 0.7s;
     color: #c1b6ad;
 }
+
 
 .amazing-section__button-icon-container {
     padding: 0.48em;
@@ -666,6 +665,7 @@ html {
 /*-------------------MENU-CARDS---------------------------*/
 
 .main__menu-cards-section {
+    display: block;
 }
 
 .menu-cards__container {
@@ -700,7 +700,7 @@ html {
 }
 
 .menu-cards__description {
-    max-width: 270px;
+    max-width: 308px;
     padding: 1.4em 1.25em 0 1.15em;
     margin-bottom: 18px;
 }
@@ -728,7 +728,17 @@ html {
 
 /*-------------------MEDIA-----------------------------------------------*/
 
+@media screen and (max-width: 1420px) and (min-width: 769px) {
+    .about-section__dashboard {
+        height: auto;
+        align-content: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
 
     .header__navigation-container {
         display: none;
