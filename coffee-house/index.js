@@ -26,49 +26,49 @@ const sliderData = [
         description:
             'This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped withoat milk.',
         price: '$5.50',
-        img_src: './assets/slider-img/coffee-slider-1.svg',
+        img_src: './assets/slider-img/coffee-slider-1.png',
     },
     {
         title: 'Caramel Macchiato',
         description:
             'Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.',
         price: '$5.00',
-        img_src: './assets/slider-img/coffee-slider-2.svg',
+        img_src: './assets/slider-img/coffee-slider-2.png',
     },
     {
         title: 'Ice coffee',
         description:
             'A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.',
         price: '$4.50',
-        img_src: './assets/slider-img/coffee-slider-3.svg',
+        img_src: './assets/slider-img/coffee-slider-3.png',
     },
 ]
 
 //slider
 document.addEventListener('DOMContentLoaded', function () {
-    const prevButton = document.querySelector('.prev-slide');
-    const nextButton = document.querySelector('.next-slide');
-    const dashButtons = document.querySelectorAll('.dash__button');
+    const prevButton = document.querySelector('.prev-slide')
+    const nextButton = document.querySelector('.next-slide')
+    const dashButtons = document.querySelectorAll('.dash__button')
 
     let slideIndex = 0
 
     prevButton.addEventListener('click', () => {
-        slideIndex === 0 ? (slideIndex = 2) : slideIndex--;
+        slideIndex === 0 ? (slideIndex = 2) : slideIndex--
         updateSliderContent()
     })
 
     nextButton.addEventListener('click', () => {
-        slideIndex === 2 ? (slideIndex = 0) : slideIndex++;
+        slideIndex === 2 ? (slideIndex = 0) : slideIndex++
         updateSliderContent()
-    });
+    })
 
     dashButtons.forEach((e, index) => {
-      e.addEventListener('click', () => {
-        slideIndex = index;
-        updateSliderContent();
-        e.classList.toggle('active_dash');
-      });
-    });
+        e.addEventListener('click', () => {
+            slideIndex = index
+            updateSliderContent()
+            e.classList.toggle('active_dash')
+        })
+    })
 
     function updateSliderContent() {
         const sliderImg = document.querySelector('.slider_src')
@@ -84,5 +84,25 @@ document.addEventListener('DOMContentLoaded', function () {
         sliderPrice.textContent = currentSlide.price
     }
 
-    updateSliderContent();
+    updateSliderContent()
+})
+
+
+//navigation from MenuPage to sections of home page
+
+const favoriteButton = document.getElementById('favorite');
+const aboutButton = document.getElementById('about');
+const mobileAppButton = document.getElementById('mobile-app');
+
+
+favoriteButton.addEventListener('click', function () {
+    window.location.href = 'index.html#favorite-section'
+})
+
+aboutButton.addEventListener('click', function () {
+    window.location.href = 'index.html#about-section'
+})
+
+mobileAppButton.addEventListener('click', function () {
+    window.location.href = 'index.html#mobile-app-section'
 })
