@@ -1,6 +1,6 @@
 //burger menu
 
-window.onload = function () {
+document.addEventListener('DOMContentLoaded', function () {
     const menu_btn = document.querySelector('.header__hamburger')
     const mobile_menu = document.querySelector('.mobile-header')
     const nav_items = document.querySelectorAll('.nav_item')
@@ -16,7 +16,7 @@ window.onload = function () {
             mobile_menu.classList.toggle('is-active')
         })
     })
-}
+})
 
 //data for slider
 
