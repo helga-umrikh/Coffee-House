@@ -980,7 +980,7 @@ html {
 
 @media screen and (max-width: 706px) {
     .container {
-        max-width: 348px;
+        padding: 0 1.4em;
     }
 
     .header__navigation {
@@ -1022,6 +1022,10 @@ html {
 
     .about-section__title {
         margin-bottom: 40px;
+    }
+
+    .about-section__dashboard {
+        align-content: center;
     }
 
     .about-section__dashboard div {
