@@ -5,8 +5,8 @@ import desertData from './desertsData.js';
 function renderCards(data, button) {
     const section = document.querySelector('.main__menu-cards-section')
     const menuContainer = document.createElement('div')
-    menuContainer.classList.add('menu-cards__container')
-    section.appendChild(menuContainer)
+    menuContainer && menuContainer.classList.add('menu-cards__container')
+    section && section.appendChild(menuContainer)
 
     data.forEach((item) => {
         const menuCardsItem = document.createElement('div')
@@ -45,7 +45,7 @@ function renderCards(data, button) {
         menuCardsDescription.appendChild(costElement)
     })
 
-    button.classList.add('active-menu-button');
+    button && button.classList.add('active-menu-button');
 }
 
 window.onload = function() {
@@ -56,19 +56,19 @@ const coffeeBtn = document.querySelector('._coffee-btn');
 const teaBtn = document.querySelector('._tea-btn');
 const desertBtn = document.querySelector('._desert-btn')
 
-coffeeBtn.addEventListener('click', function () {
+coffeeBtn && coffeeBtn.addEventListener('click', function () {
     const container = document.querySelector('.menu-cards__container')
     container && container.remove('menu-cards__container');;
     renderCards(coffeeData, coffeeBtn)
 })
 
-teaBtn.addEventListener('click', function () {
+teaBtn && teaBtn.addEventListener('click', function () {
     const container = document.querySelector('.menu-cards__container')
     container && container.remove('.menu-cards__container');;
     renderCards(teaData, teaBtn)
 })
 
-desertBtn.addEventListener('click', function () {
+desertBtn && desertBtn.addEventListener('click', function () {
   const container = document.querySelector('.menu-cards__container')
   container && container.remove('.menu-cards__container');
   renderCards(desertData, desertBtn)

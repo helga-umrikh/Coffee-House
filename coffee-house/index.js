@@ -52,17 +52,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let slideIndex = 0
 
-    prevButton.addEventListener('click', () => {
+    prevButton && prevButton.addEventListener('click', () => {
         slideIndex === 0 ? (slideIndex = 2) : slideIndex--
         updateSliderContent()
     })
 
-    nextButton.addEventListener('click', () => {
+    nextButton && nextButton.addEventListener('click', () => {
         slideIndex === 2 ? (slideIndex = 0) : slideIndex++
         updateSliderContent()
     })
 
-    dashButtons.forEach((e, index) => {
+    dashButtons && dashButtons.forEach((e, index) => {
         e.addEventListener('click', () => {
             slideIndex = index
             updateSliderContent()
@@ -95,14 +95,14 @@ const aboutButton = document.getElementById('about');
 const mobileAppButton = document.getElementById('mobile-app');
 
 
-favoriteButton.addEventListener('click', function () {
+favoriteButton && favoriteButton.addEventListener('click', function () {
     window.location.href = 'index.html#favorite-section'
 })
 
-aboutButton.addEventListener('click', function () {
+aboutButton && aboutButton.addEventListener('click', function () {
     window.location.href = 'index.html#about-section'
 })
 
-mobileAppButton.addEventListener('click', function () {
+mobileAppButton && mobileAppButton.addEventListener('click', function () {
     window.location.href = 'index.html#mobile-app-section'
 })
