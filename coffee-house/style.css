@@ -96,14 +96,36 @@ html {
 }
 
 .slider-button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 100px;
     border: 1px solid #665f55;
     background-color: transparent;
-    padding: 1.3em;
 }
 
 .slider-button:hover {
     background-color: #665f55;
+}
+
+.slider__button-right-container
+    .button-right.slider-button.next-slide:hover
+    .arrow
+    #Vector-right {
+    stroke: #e1d4c9;
+}
+.slider__button-left-container
+    .button-left.slider-button.prev-slide:hover
+    .arrow
+    #Vector-left {
+    stroke: #e1d4c9;
+}
+
+.arrow #Vector-left,
+.arrow #Vector-right {
+    transition: stroke 0.3s;
 }
 
 .slider__button-left-container {
@@ -134,10 +156,6 @@ html {
     padding: 2px 20px;
     border-radius: 100px;
     background-color: #c1b6ad;
-}
-
-.dash__button:hover {
-    background-color: #665f55;
 }
 
 .active_dash {
@@ -244,7 +262,6 @@ html {
 .mobile-header {
     display: none;
 }
-
 
 /* -----------------------------MAIN------------------------------- */
 
@@ -564,8 +581,10 @@ html {
 .social-button-icon {
     width: 3.75em;
     height: 3.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 15px;
     margin-right: 12px;
     border-radius: 100px;
     border: 1px solid #c1b6ad;
@@ -585,7 +604,6 @@ html {
 
 .main__amazing-section {
 }
-
 
 .amazing-section__container {
     display: flex;
@@ -621,14 +639,11 @@ html {
     cursor: pointer;
 }
 
-
-
 ._active-menu-btn {
     background: #665f55;
     transition: ease-out 0.7s;
     color: #c1b6ad;
 }
-
 
 .amazing-section__button-icon-container {
     padding: 0.48em;
@@ -770,7 +785,7 @@ html {
     }
 
     .header_logo {
-        z-index: 100;    
+        z-index: 100;
     }
 
     .header__hamburger {
@@ -785,7 +800,7 @@ html {
         width: 100%;
         min-height: 100vh;
         z-index: 98;
-        background-color: #E1D4C9;
+        background-color: #e1d4c9;
         padding-top: 120px;
         transition: 1s;
     }
@@ -794,7 +809,7 @@ html {
         left: 0;
     }
 
-    .header__navigation{
+    .header__navigation {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -892,7 +907,7 @@ html {
     .active_btn:hover::before {
         width: inherit;
     }
-    
+
     .app-stores__button:hover {
         background-color: inherit;
     }
@@ -900,7 +915,7 @@ html {
     .app-stores__button:hover .app-stores__subtitle {
         color: inherit;
     }
-    
+
     .app-stores__button:hover .app-stores__title {
         color: inherit;
     }
@@ -908,27 +923,25 @@ html {
     .social-button-icon:hover {
         background-color: inherit;
     }
-    
+
     .social-button-icon:hover path {
         stroke: inherit;
     }
 
     .amazing-section__button:hover > p:hover {
-        color:inherit;
+        color: inherit;
     }
-    
+
     .amazing-section__button p:hover {
         color: inherit;
     }
 
     .menu-cards__item:hover {
-        transform: none
+        transform: none;
     }
 }
 
-
 @media screen and (max-width: 768px) and (min-width: 707px) {
-
     .container {
         max-width: 688px;
     }
@@ -948,7 +961,7 @@ html {
         display: flex;
     }
 
-    .dashboard__item .inactive_img{
+    .dashboard__item .inactive_img {
         width: 100%;
     }
 
@@ -975,7 +988,6 @@ html {
     .footer__contacts {
         padding: 0;
     }
-
 }
 
 @media screen and (max-width: 706px) {
@@ -1041,7 +1053,7 @@ html {
     }
 
     .about-section__dashboard div:last-child {
-        background-image: url(./assets/dashboard/about-4.png) ;
+        background-image: url(./assets/dashboard/about-4.png);
     }
 
     .mobile-app-section__description {
@@ -1055,7 +1067,6 @@ html {
     .mobile-app-section__app-stores {
         flex-direction: column;
         margin-bottom: 44px;
-
     }
 
     .mobile-app-section__app-stores .app-stores__button:first-child {
