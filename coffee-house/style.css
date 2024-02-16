@@ -658,12 +658,6 @@ progress::-moz-progress-bar {
     cursor: pointer;
 }
 
-._active-menu-btn {
-    background: #665f55;
-    transition: ease-out 0.7s;
-    color: #c1b6ad;
-}
-
 .amazing-section__button-icon-container {
     padding: 0.48em;
     border-radius: 100px;
@@ -694,6 +688,16 @@ progress::-moz-progress-bar {
 
 .amazing-section__button.amazing-section__button-title:hover {
     color: #e1d4c9;
+}
+
+/*active menu button*/
+
+.active-menu-button {
+    background: #665f55;
+}
+
+.active-menu-button p {
+    color: #C1B6AD !important;
 }
 
 /*-------------------MENU-CARDS---------------------------*/
