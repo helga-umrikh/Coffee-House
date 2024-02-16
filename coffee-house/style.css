@@ -104,6 +104,7 @@ html {
     border-radius: 100px;
     border: 1px solid #665f55;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .slider-button:hover {
@@ -152,15 +153,33 @@ html {
 
 /*---------*/
 
-.dash__button {
-    padding: 2px 20px;
-    border-radius: 100px;
-    background-color: #c1b6ad;
+.dash__progress {
+    height: 4px;
+    margin: 0 12px 0 0;
 }
 
-.active_dash {
-    background-color: #423d37;
+progress {
+    border-radius: 100px;
+    background-color: #C1B6AD;
+    -webkit-appearance: none;
+    accent-color: #665F55;
 }
+
+progress::-webkit-progress-bar {
+    border-radius: 100px;
+    background-color: #C1B6AD;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 100px;
+    background-color: #665F55;
+}
+
+progress::-moz-progress-bar {
+    border-radius: 100px;
+    background-color: #C1B6AD;
+}
+
 
 /* --------------------------HEADER------------------------ */
 
