@@ -52,17 +52,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let slideIndex = 0
     let duration = 5000
-    let intervalSlideID
-    let intervalProgressID
+    let intervalProgressID;
 
     prevButton &&
         prevButton.addEventListener('click', () => {
+            clearInterval(intervalProgressID);
+            let currentProgressDash = progressDashes[slideIndex]
+            currentProgressDash.value = 0;
             updateSliderIndex(false)
             updateCurrentSlide()
         })
 
     nextButton &&
         nextButton.addEventListener('click', () => {
+            clearInterval(intervalProgressID);
+            let currentProgressDash = progressDashes[slideIndex]
+            currentProgressDash.value = 0;
             updateSliderIndex(true)
             updateCurrentSlide()
         })
