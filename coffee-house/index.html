@@ -41,7 +41,7 @@
               <img src="./assets/coffee-cup.svg" alt="coffee cup icon" />
             </a>
           </div>
-          <button class="header__hamburger" onclick="toggleHamburger()">
+          <button class="header__hamburger">
             <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="18" height="2" viewBox="0 0 18 2" fill="none">
               <path d="M1 1H17" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
@@ -99,7 +99,12 @@
             <div class="favorite-section__slider">
               <div class="slider__button-left-container">
                 <button class="button-left slider-button prev-slide">
-                  <img src="./assets/arrow-left.svg" alt="arrow left icon">
+                  <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g id="arrow-left">
+                      <path class="arrow-left" id="Vector-left" d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#403F3D"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
                 </button>
               </div>
               <div class="slider__content">
@@ -107,20 +112,27 @@
                   <img class="slider_src" src="" alt="slider image">
                 </div>
                 <div class="slider__info">
-                  <p class="slider__subtitle"> 
+                  <p class="slider__subtitle">
                   <p>
                   <p class="slider__description subtitle">
                   </p>
                   <p class="slider__subtitle"></p>
                 </div>
                 <div class="slider__dashes">
-                  <button class="dash__button"></button>
-                  <button class="dash__button"></button>
-                  <button class="dash__button"></button>
+                  <progress class="dash__progress" max="100" min="0" value="0"></progress>
+                  <progress class="dash__progress"  max="100" min="0" value="0"></progress>
+                  <progress class="dash__progress"  max="100" min="0" value="0"></progress>
                 </div>
               </div>
-              <div class="slider__button-right-container"> <button class="button-left slider-button next-slide">
-                  <img src="./assets/arrow-right.svg" alt="arrow right icon">
+              <div class="slider__button-right-container"> 
+                <button class="button-right slider-button next-slide">
+                  <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="arrow-right">
+                      <path id="Vector-right" d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="#403F3D"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
                 </button></div>
             </div>
           </div>
